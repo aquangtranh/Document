@@ -4,74 +4,74 @@
 
 - Bước 1: Kiểm tra xem máy bạn có ssh key nào chưa
 
-Mở cửa sổ dòng lệnh (terminal) và chạy lệnh:
+    Mở cửa sổ dòng lệnh (terminal) và chạy lệnh:
 
-ls -al ~/.ssh
+    ls -al ~/.ssh
 
 - Bước 2: Sinh một SSH key mới
 
-Chạy lệnh sau trên terminal
+    Chạy lệnh sau trên terminal
 
-ssh-keygen -t rsa -b 4096 -C "email_cua_ban@example.com"
+    ssh-keygen -t rsa -b 4096 -C "email_cua_ban@example.com"
 
 - Bước 3 Add ssh key vào github 
 
- + Copy ssh key :
- 
-pbcopy < ~/.ssh/id_rsa.pub
+   + Copy ssh key :
 
- + Add vào github
+     pbcopy < ~/.ssh/id_rsa.pub
 
-https://github.com/settings/keys
+   + Add vào github
+
+     https://github.com/settings/keys
 
 - Bước 4: Kiếm tra lại xem mọi thứ đã OK chưa:
 
-ssh -T git@bitbucket.org
-or
-ssh -T git@github.com
+    ssh -T git@bitbucket.org
+    or
+    ssh -T git@github.com
 
 #Cài đặt môi trường PHP
  
  1. Virtual box 
  
-https://www.virtualbox.org/wiki/Downloads
+    https://www.virtualbox.org/wiki/Downloads
  
  2. Vagrant 
  
-https://www.vagrantup.com/downloads.html
+    https://www.vagrantup.com/downloads.html
  
  3. Sublime text 3
  
-https://www.sublimetext.com/3
+    https://www.sublimetext.com/3
  
  4. Terminal 
  
- - for Mac : iTerm
+  - for Mac : iTerm
  
-https://www.iterm2.com/
+    https://www.iterm2.com/
  
  5. Homestead
  
- - Setup virtual box and vagrant first
- - Add homestead box (in cd~)
+  - Setup virtual box and vagrant first
+  - Add homestead box (in cd~)
  
-vagrant box add laravel/homestead
+    vagrant box add laravel/homestead
 
-- Install Homestead
+  - Install Homestead
 
-cd ~
+    cd ~
 
-git clone https://github.com/laravel/homestead.git Homestead
+    git clone https://github.com/laravel/homestead.git Homestead
 
-- Next step
+  - Next step
 
-cd Homestead/
+    cd Homestead/
 
-bash init.sh
+    bash init.sh
 
-- Extra config reference :
+  - Extra config reference :
 
-https://laravel.com/docs/5.3/homestead
+    https://laravel.com/docs/5.3/homestead
  
  
  
